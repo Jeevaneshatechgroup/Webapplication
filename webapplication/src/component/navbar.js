@@ -6,7 +6,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 function BasicExample() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
-      <Container style={{backgroundColor:'yellowgreen'}}>
+      <Container style={{backgroundColor:'yellowgreen', borderRadius:'10px'}}>
         <Navbar.Brand href="#home">DZTech</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

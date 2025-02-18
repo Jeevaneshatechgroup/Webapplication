@@ -2,13 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
 import { Button, Container } from 'react-bootstrap';  
 import Login from './Login';  
-import Navbar from '../component/navbar'
+
 
 function App() {
   return (
 
     
-    <Container style={{backgroundColor:'yellowgreen'}}>
+    <Container style={{backgroundColor:'yellowgreen', borderRadius:'10px'}}>
     <Router> 
       <div className="App">
         <header className="App-header">
