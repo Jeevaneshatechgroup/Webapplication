@@ -10,7 +10,7 @@ function App() {
     
     <Container style={{backgroundColor:'yellowgreen', borderRadius:'10px'}}>
     <Router> 
-      <div className="App">
+      <div className="App" style={{marginBottom:'20px'}}>
         <header className="App-header">
           <h1>Welcome to DZTech</h1>
         
@@ -23,10 +23,10 @@ function App() {
         <Routes>
          
           <Route path="/" element={
-            <div>
+            <div >
               <h2>Home Page</h2>
               <p style={{ marginBottom: '20px' }}>This is the home page of DZTech.</p>
-            </div>
+            </div >
           } />
 
           
