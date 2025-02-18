@@ -9,8 +9,7 @@ function App() {
 
     
     <Container style={{backgroundColor:'yellowgreen'}}>
-    <Router>
-    <Navbar/>   
+    <Router> 
       <div className="App">
         <header className="App-header">
           <h1>Welcome to DZTech</h1>
