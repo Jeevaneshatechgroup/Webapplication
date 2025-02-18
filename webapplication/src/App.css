@@ -1,0 +1,178 @@
+
+
+/* Reset some basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling with image background */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://wallpaperaccess.com/full/1598228.jpg');
+  background-size: 300% 300%;
+  animation: gradient-animation 8s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Navbar styling */
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar .nav-link {
+  font-size: 1rem;
+}
+
+/* Welcome container styling */
+.welcome-container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent background */
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  z-index: 10;
+  opacity: 0; /* Initial opacity set to 0 */
+  animation: fadeInContainer 2s ease-in-out forwards 1s; /* Delay container fade-in */
+}
+
+/* Keyframes for smooth fade-in */
+@keyframes fadeInBody {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInContainer {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header h1 {
+  color: #000000; /* Green color */
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+/* Get Started Button Styling */
+.get-started-btn {
+  display: inline-block;
+  background-color: #000000;
+  color: white;
+  padding: 15px 40px;
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.get-started-btn:hover {
+  background-color: #20c7ff;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(76, 175, 80, 0.5);
+}
+
+.get-started-btn:active {
+  transform: scale(1);
+}
+
+/* Futuristic background effect (Overlay for more modern look) */
+.background-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(0, 204, 255, 0.2), rgba(0, 255, 204, 0.2));
+  animation: backgroundMove 15s infinite linear;
+  z-index: 1;
+}
+
+/* Futuristic animation for background */
+@keyframes backgroundMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* Additional App styles */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
