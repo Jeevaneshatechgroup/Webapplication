@@ -8,7 +8,7 @@ function App() {
   return (
 
     
-    <Container style={{backgroundColor:'yellowgreen', borderRadius:'10px'}}>
+    <Container style={{backgroundColor:'yellowgreen', borderRadius:'10px',textAlign:'center'}}>
     <Router> 
       <div className="App" style={{marginBottom:'20px'}}>
         <header className="App-header">

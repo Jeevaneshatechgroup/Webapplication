@@ -1,14 +1,12 @@
-import React from 'react'
-import Nav from '../src/component/nav';
-import Navbar from '../src/component/navbar';
-
-const App = () => {
-  return (
-    <div>
-      <Navbar/>
-      <Nav/>
-    </div>
-  )
-}
-
-export default App
+import RocketLaunches from "../src/component/RocketLaunches"; 
+ 
+function App() { 
+  return ( 
+    <div> 
+      <h1>API Integration Assignment</h1> 
+      <RocketLaunches /> 
+    </div> 
+  ); 
+} 
+ 
+export default App; 

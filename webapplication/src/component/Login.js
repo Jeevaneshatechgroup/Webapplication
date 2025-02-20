@@ -20,10 +20,10 @@ function Login() {
 
 
   return (
-    <div className="login-container">
+    <div className="login-container"style={{margin:'auto'}}>
       <h2>Login</h2>
-      <Form onSubmit={handleSubmit}>
-        <Form.Group controlId="username">
+      <Form onSubmit={handleSubmit}style={{alignItems:'center'}}>
+        <Form.Group controlId="username" style={{width:'200px'}}>
           <Form.Label>Username</Form.Label>
           <Form.Control 
             type="text" 
@@ -33,9 +33,10 @@ function Login() {
           />
         </Form.Group>
 
-        <Form.Group controlId="password">
+        <Form.Group controlId="password" style={{width:'200px', textAlign:'center'}}>
           <Form.Label>Password</Form.Label>
           <Form.Control 
+           style={{textAlign:'center'}}
             type="password" 
             placeholder="Enter password" 
             value={password} 
@@ -44,7 +45,7 @@ function Login() {
         </Form.Group>
         <br></br>
 
-        <Button variant="primary" type="submit" style={{ marginBottom: '20px' }}>Login</Button>
+        <Button variant="primary" type="submit" style={{ marginBottom: '20px',textAlign:'center' }}>Login</Button>
 
 
         {errorMessage && <Alert variant="danger" className="mt-3">{errorMessage}</Alert>}
